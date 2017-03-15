@@ -22,16 +22,16 @@ int main()
     receberconatiner();
     num = receberconatiner();
     verificarContainerPorto(num);
-    printf("%d",numa);
+    printf("%d",num);
     return 0;
 }
 //Entrada de Container ao porto
 int receberconatiner(){
 
-    int ncontainer,numero;
+    int ncontainer;
     printf("Informe a quantidade de container a ser colocado no porto: \n");
     scanf("%d",&ncontainer);
-return numero;
+return ncontainer;
 }
 //Verifica a entrada do COntainer no porto
 
