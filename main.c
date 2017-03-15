@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-
-
 struct ContainerPorto{
         int id_conatainer[200];
         int peso_container[200];
@@ -19,7 +17,6 @@ int verificarContainerPorto();
 int main()
 {
     int num;
-    receberconatiner();
     num = receberconatiner();
     verificarContainerPorto(num);
     printf("%d",num);
@@ -36,8 +33,10 @@ return ncontainer;
 //Verifica a entrada do COntainer no porto
 
 int verificarContainerPorto(int numContainer){
+    int num;
      if(numContainer >0 && numContainer<200){
-            return numContainer;
+            num = numContainer;
+            return num;
         }else{
             printf("Quantidade invalida,Digite outro valor: \n");
             receberconatiner();
